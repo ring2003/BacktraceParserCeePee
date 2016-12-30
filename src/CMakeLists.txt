@@ -5,5 +5,4 @@ find_library(GLIB NAMES libglib-2.0.so "/grid/common/pkgsData/glib-v2.48.0/Linux
 target_include_directories(main PUBLIC ${CMAKE_SOURCE_DIR}/3rd)
 target_link_libraries(main ${BTPARSER})
 target_link_libraries(main ${GLIB})
-#install(FILES main RUNTIME DESTINATION ${CMAKE_BINARY_DIR})
-install(TARGETS main DESTINATION "/tmp/BacktraceParserCeePee/build")
+install(FILES main RUNTIME DESTINATION ${CMAKE_BINARY_DIR})
