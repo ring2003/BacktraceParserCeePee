@@ -8,3 +8,7 @@ sed -i 's/PKG_CHECK_MODULES.*//g' configure
 make
 cd ..
 ln -s 3rd/lib/.lib/
+mkdir build
+cd build
+cmake ..
+make && make install
